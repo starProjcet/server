@@ -198,9 +198,9 @@
 					<!-- password protected by Talk -->
 					<ActionCheckbox v-if="isPasswordProtectedByTalkAvailable"
 						:checked.sync="isPasswordProtectedByTalk"
-						:disabled="saving"
+						:disabled="!hasUnsavedPassword || saving"
 						class="share-link-password-talk-checkbox"
-						@change="queueUpdate('sendPasswordByTalk')">
+						@change="queueUpdate('sendPasswordByTalk', 'password')">
 						{{ t('files_sharing', 'Video verification') }}
 					</ActionCheckbox>
 
