@@ -8,6 +8,8 @@
  *
  */
 
+import escapeHTML from 'escape-html'
+
 /* global dav */
 
 (function(OC, FileInfo) {
