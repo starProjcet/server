@@ -41,7 +41,7 @@ use OCP\IConfig;
 use OCP\ILogger;
 
 abstract class Fetcher {
-	public const INVALIDATE_AFTER_SECONDS = 300;
+	public const INVALIDATE_AFTER_SECONDS = 3600;
 
 	/** @var IAppData */
 	protected $appData;
